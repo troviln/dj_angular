@@ -12,8 +12,6 @@ class TweetSerializer(serializers.ModelSerializer):
         fields = ('id', 'text', 'user', 'timestamp')
 
 
-
-
 class UserSerializer(serializers.ModelSerializer):
     tweets = TweetSerializer(many=True, source="tweet_set")
 
