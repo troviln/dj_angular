@@ -1,0 +1,17 @@
+<div class="tweet-container">
+    <form  name="personForm">
+    <input   placeholder="Say something . . ."  type="text" class="new-tweet-input" id="new-tweet" ng-model="text_in" required="true" >
+  <!-- new tweet submitted here -->
+  <button name="dd" type="submit" class="btn-tweet" id="tweet" ng-click="submitTweet(text_in)">Tweet</button>
+ </form>
+</div>
+
+<div class="tweets" id="tweets-target">
+  <div class="tweet-container" ng-repeat="tweet in tweets" >
+    <div class="tweet-body"> [[ tweet.text ]]</div>
+    <div class="tweet-name"> [[ tweet.user ]]</div>
+    <div class="tweet-time"> [[ tweet.timestamp | date:'medium' ]]</div>
+    <div><button class="btn-tweet_del" id="tweet_delete" ng-click="deleteTweet([[ tweet.id ]])">delete</button></div>
+  </div>
+</div>
+
