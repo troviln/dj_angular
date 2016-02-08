@@ -21,7 +21,6 @@ angular.module('tweeterApp', [
     // $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
 
     // Routing
-
     $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('tweets', {
