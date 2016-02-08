@@ -1,4 +1,4 @@
 # dj_angular
 initial commit
 
-angularjs whith django
+angularjs with django+rest
